@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShareandRateTableViewCustomCell" rowHeight="80" id="KGk-i7-Jjw" customClass="ShareandRateTableViewCustomCell" customModule="BMI_Calculator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYV-Gl-5IH">
+                        <rect key="frame" x="5" y="5" width="310" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share This App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2az-MS-tRT">
+                                <rect key="frame" x="8" y="12" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="odQ-Pq-8IX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zo9-z3-3nA">
+                                <rect key="frame" x="266" y="16.666666666666664" width="30" height="30.666666666666664"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BEO-0j-vZ3"/>
+                                    <constraint firstAttribute="width" constant="30" id="hiU-X4-Iy5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share this app with your friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dt-Lx-zKm">
+                                <rect key="frame" x="8" y="32" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qde-TA-Uv3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zo9-z3-3nA" firstAttribute="centerY" secondItem="OYV-Gl-5IH" secondAttribute="centerY" id="3yW-0M-XTL"/>
+                            <constraint firstItem="3dt-Lx-zKm" firstAttribute="top" secondItem="2az-MS-tRT" secondAttribute="bottom" constant="-1" id="5Js-W3-s5A"/>
+                            <constraint firstItem="2az-MS-tRT" firstAttribute="centerY" secondItem="OYV-Gl-5IH" secondAttribute="centerY" constant="-10" id="7BP-Cl-Cm1"/>
+                            <constraint firstItem="Zo9-z3-3nA" firstAttribute="leading" secondItem="2az-MS-tRT" secondAttribute="trailing" constant="8" symbolic="YES" id="9Aj-Fg-b3V"/>
+                            <constraint firstItem="2az-MS-tRT" firstAttribute="leading" secondItem="OYV-Gl-5IH" secondAttribute="leading" constant="8" id="Wk7-lF-Asm"/>
+                            <constraint firstAttribute="trailing" secondItem="Zo9-z3-3nA" secondAttribute="trailing" constant="14" id="Xcg-wc-jZE"/>
+                            <constraint firstItem="3dt-Lx-zKm" firstAttribute="centerY" secondItem="OYV-Gl-5IH" secondAttribute="centerY" constant="10" id="Ytl-iM-ILl"/>
+                            <constraint firstItem="Zo9-z3-3nA" firstAttribute="leading" secondItem="3dt-Lx-zKm" secondAttribute="trailing" constant="8" symbolic="YES" id="Zym-3y-HRa"/>
+                            <constraint firstItem="3dt-Lx-zKm" firstAttribute="leading" secondItem="OYV-Gl-5IH" secondAttribute="leading" constant="8" id="peI-nO-7QZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OYV-Gl-5IH" secondAttribute="bottom" constant="5" id="8Bi-Wc-e45"/>
+                    <constraint firstAttribute="trailing" secondItem="OYV-Gl-5IH" secondAttribute="trailing" constant="5" id="EVa-bc-Zqi"/>
+                    <constraint firstItem="OYV-Gl-5IH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tiW-7D-zZR"/>
+                    <constraint firstItem="OYV-Gl-5IH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="wor-1U-rxM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconImageView" destination="Zo9-z3-3nA" id="sxe-VJ-E4d"/>
+                <outlet property="subTittleLabel" destination="3dt-Lx-zKm" id="7eF-Ni-GX5"/>
+                <outlet property="tittleLabel" destination="2az-MS-tRT" id="yNA-aL-w7s"/>
+            </connections>
+            <point key="canvasLocation" x="101.53846153846153" y="31.635071090047393"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.31400001049041748" blue="0.40000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
